@@ -43,6 +43,7 @@ namespace ProblemaA
             }
             //Se o último armario estiver ocupado ele não será contado, mas não é um problema por que a alocação de espaço precisa ser contígua
             // Ex. [Vazio, Ocupado, Vazio, Ocupado, Vazio, Vazio, Ocupado, Vazio, Ocupado]
+            // É possível corrigir este bug, mas está na TODO, já que essa informação não é essencial para o programa
             var numTotalArmarios = Math.Max(armariosLivres.Max(), armariosLivres.Count() + armariosIndisponiveis);
             #endregion
 
